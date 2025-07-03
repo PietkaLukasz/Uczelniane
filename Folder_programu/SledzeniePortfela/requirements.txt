@@ -1,0 +1,9 @@
+streamlit>=1.46.0  # Interfejs webowy
+pandas>=2.2.3      # Przetwarzanie danych dla tabel
+matplotlib>=3.10.1 # Wykresy
+yfinance>=0.2.63   # Pobieranie danych finansowych
+paramiko>=3.5.1    # Połączenie SSH do bazy danych na Ubuntu
+pytest>=8.4.0      # Testy jednostkowe
+pytest-cov>= 6.2.1 # Raport z pokrycia kodu
+pytest-mock
+sqlite3

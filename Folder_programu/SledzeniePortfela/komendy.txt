@@ -1,0 +1,19 @@
+streamlit run app.py
+
+Ctrl + c
+
+pytest
+
+
+tar -czf sledzenie_portfela.tar.gz .
+
+synchronizacja bazy spowrotem
+cd E:\Py-Projects\Roboczy\Programowanie_II_Poziomu\Na_Zaliczenie\Folder_programu\SledzeniePortfela
+scp -P 2222 data/portfel_baza_danych.db student@localhost:/home/student/SledzeniePortfela/data
+
+na serwerze
+ls -lh /home/student/SledzeniePortfela/data/
+
+scp -P 2222 app.py student@localhost:/home/student/SledzeniePortfela/
+scp -P 2222 database/zarzadca_bazy_danych.py student@localhost:/home/student/SledzeniePortfela/database/
+scp -P 2222 services/usluga_api.py student@localhost:/home/student/SledzeniePortfela/services/

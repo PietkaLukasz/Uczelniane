@@ -1,0 +1,4 @@
+Zadanie 1:
+.../Zadanie 1> flake8 biblio_zly_kod.py
+.../Zadanie 1> pylint biblio_zly_kod.py
+.../Zadanie 1> biblioteka_poprawiony.py

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista zadań</title>
+</head>
+<body>
+    <h1>Lista zadań</h1>
+    <form method="POST" action="{{ url_for('dodaj_zadanie') }}">
+        <input type="text" name="tresc" placeholder="Wpisz nowe zadanie" required>
+        <button type="submit">Dodaj</button>
+    </form>
+    <ul>
+        {% for zadanie in zadania %}
+        <li>
+            {{ zadanie.tresc }}
+            {% if zadanie.czy_wykonane %}
+                (Wykonane)
+            {% else %}
+                <a href="{{ url_for('oznacz_jako_wykonane', zadanie_id=zadanie.id) }}">Oznacz jako wykonane</a>
+            {% endif %}
+            <a href="{{ url_for('usun_zadanie', zadanie_id=zadanie.id) }}">Usuń</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('strona_glowna') }}">Wróć do strony głównej</a>
+</body>
+</html>

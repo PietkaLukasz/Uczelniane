@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini To-Do</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Witaj w aplikacji To-Do!</h1>
+    <p>Przejdź do:
+    <a href="{{ url_for('lista_zadan') }}">Lista zadań</a> |
+    <a href="{{ url_for('o_aplikacji') }}">O aplikacji</a></p>
+</body>
+</html>

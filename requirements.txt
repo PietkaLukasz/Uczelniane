@@ -1,0 +1,20 @@
+streamlit>=1.46.0
+pandas>=2.2.3
+matplotlib>=3.10.1
+yfinance>=0.2.63
+paramiko>=3.5.1
+pytest>=8.4.0 
+pytest-cov>= 6.2.1
+pytest-mock
+sqlite3
+flask>=3.1.1
+plotly>=6.2.0
+flake8>=7.3.0
+pylint>=3.2.7
+black>=25.1.0
+SQTLAlchemy>=2.0.40
+
+
+
+
+
